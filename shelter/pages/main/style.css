@@ -51,6 +51,31 @@ body {
     --color-dark-3xl: #292929;
 }
 
+.h2 {
+    font-family: "Georgia", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+}
+
+.h3 {
+    font-family: "Georgia", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+.paragraph-l {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+}
+
 a {
     text-decoration: none;
 }
@@ -60,11 +85,12 @@ a {
     margin: 0 auto;
 }
 
-.header{
+.header {
     padding-top: 60px;
-    background-image: url("../../assets/img/gradient-background.png");
-    background-repeat: no-repeat;
-    background-position: center 0;
+    background: url("../../assets/img/noise-transparent.png"), 
+                radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    background-repeat: repeat, no-repeat;
+    background-size: auto, auto 908px;
 }
 
 .header-container {
@@ -104,8 +130,123 @@ a {
 
 .nav-link {
     color: var(--color-dark-s);
-    font-family: 'Arial';
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--color-light-s);
+}
+
+.nav-link:active {
+    position: relative;
+}
+
+.nav-link:active::after {
+    content: "";
+    position: absolute;
+    background: var(--color-primary);
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+}
+
+.link-active {
+    color: var(--color-light-s);
+    position: relative;
+}
+
+.link-active::after {    
+    content: "";
+    position: absolute;
+    background: var(--color-primary);
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+}
+
+.section-hero {
+    background: url("../../assets/img/noise-transparent.png") repeat, 
+                radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) no-repeat;
+    background-size: auto;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-info {
+    padding-top: 223px;
+    max-width: 460px;
+    padding-bottom: 243px;
+}
+
+.hero-title {
+    color: var(--color-light-xl);
+    max-width: 310px;
+    padding-bottom: 42px;
+}
+
+.hero-text {
+    color: var(--color-dark-s);
+    padding-bottom: 42px;
+}
+
+.button-primary {
+    display: block;
+    background-color: var(--color-primary);
+    color: var(--color-dark-3xl);
+    width: 207px;
+    height: 52px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: "Georgia";
+    font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding: 15px 0;
+    transition: 0.3s;
+}
+
+.button-primary:hover {
+    background-color: var(--color-primary-light);
+}
+
+.puppy {
+    background-image: url("../../assets/img/start-screen-puppy.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 698px;
+    height: 728px;
+    align-self: flex-end;
+}
+
+.section-about {
+    color: var(--color-dark-xl);
+    background-image: url("../../assets/img/about-pets.png");
+    background-repeat: no-repeat;
+    background-position: 28.5% 38%;
+}
+
+.about-info {
+    margin-left: auto;
+    max-width: 50.5%;
+    padding: 94px 0 114px 0;
+}
+
+.about-title {
+    max-width: 370px;
+    padding-bottom: 25px;
+    color: var(--color-dark-l);
+}
+
+.about-description {
+    max-width: 430px;
+    padding-bottom: 25px;
 }
