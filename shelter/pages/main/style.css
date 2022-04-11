@@ -10,6 +10,7 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
 }
@@ -18,18 +19,14 @@ body {
     font-family: "Arial";
     font-style: normal;
     font-weight: 400;
-    src: local("Arial"),
-         local("Arial Regular"),
-         url("./assets/fonts/arial-regular.ttf") format("ttf");
+    src: url("./assets/fonts/arial-regular.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "Arial";
     font-style: italic;
     font-weight: 400;
-    src: local("Arial"),
-         local("Arial Italic"),
-         url("./assets/fonts/arial-italic.ttf") format("ttf");
+    src: url("./assets/fonts/arial-italic.ttf") format("ttf");
   }
 
 
@@ -37,9 +34,25 @@ body {
     font-family: "Georgia";
     font-style: normal;
     font-weight: 400;
-    src: local("Georgia"),
-         local("Georgia Regular"),
-         url("./assets/fonts/georgia-regular.ttf") format("ttf");
+    src: url("./assets/fonts/georgia-regular.ttf") format("ttf");
+}
+
+:root {
+    --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
+    --color-light-xl: #FFFFFF;
+    --color-light-l: #F6F6F6;
+    --color-light-s: #FAFAFA;
+    --color-dark-s: #CDCDCD;
+    --color-dark-m: #B2B2B2;
+    --color-darl-l: #545454;
+    --color-dark-xl: #4C4C4C;
+    --color-dark-2xl: #444444;
+    --color-dark-3xl: #292929;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -49,5 +62,50 @@ body {
 
 .header{
     padding-top: 60px;
+    background-image: url("../../assets/img/gradient-background.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
 }
 
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo-title {
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+    padding-bottom: 10px;
+}
+
+.logo-subtitle {
+    color: var(--color-light-xl);
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+}
+
+.nav-list {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 35px;
+}
+
+.nav-link {
+    color: var(--color-dark-s);
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+}
