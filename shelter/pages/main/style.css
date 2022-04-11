@@ -68,6 +68,14 @@ body {
     letter-spacing: 0.06em;
 }
 
+.h4 {
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+
 .paragraph-l {
     font-family: "Arial", sans-serif;
     font-style: normal;
@@ -231,13 +239,13 @@ a {
     color: var(--color-dark-xl);
     background-image: url("../../assets/img/about-pets.png");
     background-repeat: no-repeat;
-    background-position: 28.5% 38%;
+    background-position: 28.5% 44%;
 }
 
 .about-info {
     margin-left: auto;
     max-width: 50.5%;
-    padding: 94px 0 114px 0;
+    padding: 94px 0 89px 0;
 }
 
 .about-title {
@@ -249,4 +257,67 @@ a {
 .about-description {
     max-width: 430px;
     padding-bottom: 25px;
+}
+
+.section-friends {
+    background-color: var(--color-light-l);
+    padding-top: 80px;
+}
+
+.friends-title {
+    max-width: 400px;
+    color: var(--color-darl-l);
+    padding-bottom: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.friends-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 998px;
+    margin: 0 auto;
+}
+
+.friends-item {
+    width: 270px;
+    height: 435px;
+    background-color: var(--color-light-s);
+    background-repeat: no-repeat;
+}
+
+.friends-item:nth-child(1) {
+    background-image: url("../../assets/img/pets-katrine.png");
+}
+
+.friends-item:nth-child(2) {
+    background-image: url("../../assets/img/pets-jennifer.png");
+}
+
+.friends-item:nth-child(3) {
+    background-image: url("../../assets/img/pets-woody.png");
+}
+
+.friends-name {
+    margin-top: 299px;
+    text-align: center;
+    color: var(--color-darl-l);
+}
+
+.button-secondary {
+    display: block;
+    width: 187px;
+    height: 52px;
+    text-align: center;
+    padding-top: 13px;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    margin: 30px 41.5px;
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl)
 }
