@@ -3,3 +3,51 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Arial"),
+         local("Arial Regular"),
+         url("./assets/fonts/arial-regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Arial"),
+         local("Arial Italic"),
+         url("./assets/fonts/arial-italic.ttf") format("ttf");
+  }
+
+
+@font-face {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Georgia"),
+         local("Georgia Regular"),
+         url("./assets/fonts/georgia-regular.ttf") format("ttf");
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    padding-top: 60px;
+}
+
