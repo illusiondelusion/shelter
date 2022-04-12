@@ -99,6 +99,7 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
+    color: var(--color-dark-m);
 }
 
 a {
@@ -474,6 +475,7 @@ a {
     height: 43px;
     padding: 10px 15px 10px 60px;
     margin-bottom: 20px;
+    color: var(--color-dark-l)
 }
 
 .card::before {
@@ -487,5 +489,83 @@ a {
 }
 
 .footer {
-    
+    background: url("../../assets/img/noise-transparent.png"), 
+                radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    background-repeat: repeat, no-repeat;
+    padding-top: 56px;
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 160px;
+    color: var(--color-light-xl);
+}
+
+.first-col {
+    max-width: 280px;
+}
+
+.second-col {
+    max-width: 308px;
+}
+
+.header-contacts {
+    list-style: none;
+}
+
+.list-item-contact {
+    padding: 45px 0 0 55px;
+    position: relative;
+}
+
+.list-item-contact::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 32px;
+    background-size: contain;
+    left: 0px;
+    top: 40px;
+}
+
+.list-item-geo {
+    padding: 34px 0 0 40px;
+    position: relative;
+}
+
+.list-item-contact a,
+.list-item-geo a {
+    color: var(--color-primary);
+}
+
+.list-item-geo::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 32px;
+    background-size: contain;
+    left: -2px;
+    top: 36px;
+}
+
+.list-item-contact:nth-child(1)::before {
+    background-image: url("../../assets/svg/icon-email.svg");
+}
+
+.list-item-contact:nth-child(2)::before {
+    background-image: url("../../assets/svg/icon-phone.svg");
+}
+
+.list-item-geo:nth-child(n)::before {
+    background-image: url("../../assets/svg/icon-marker.svg");
+}
+
+.header-dog {
+    background-image: url("../../assets/img/footer-puppy.png");
+    align-self: flex-end;
+    width: 300px;
+    height: 310px;
+    background-repeat: no-repeat;
+}
+
