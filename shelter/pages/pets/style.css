@@ -112,7 +112,8 @@ a {
 }
 
 .header {
-   background-color: var(--color-light-xl);
+    color: var(--color-light-xl);    
+    height: 120px;
 }
 
 .header-container {
@@ -120,26 +121,28 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    padding-top: 30px;
 }
 
-.logo-title {
+.logo-title a {
     font-family: "Georgia", serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 110%;
     letter-spacing: 0.06em;
     color: var(--color-dark-l);
-    padding-bottom: 10px;
 }
 
 .logo-subtitle {
+    display: block;
     color: var(--color-dark-3xl);
     font-family: "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.1em;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .nav-list {
@@ -188,16 +191,6 @@ a {
     bottom: -4px;
 }
 
-.first-string {
-    display: block;
-}
-
-.friends-title {
-    color: var(--color-dark-l);
-    margin: 0 auto;
-    text-align: center;
-}
-
 .section {
     padding: 80px 0 100px 0;
 }
@@ -206,11 +199,126 @@ a {
     background-color: var(--color-light-l);
 }
 
+.friends-title {
+    max-width: 400px;
+    color: var(--color-dark-l);
+    padding-bottom: 45px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.first-string {
+    display: block;
+}
+
+.friends-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 45px auto;
+    padding: 15px 0;
+    row-gap: 30px;
+}
+
+.friends-item {
+    width: 270px;
+    height: 435px;
+    background-color: var(--color-light-s);
+    cursor: pointer;
+    border-radius: 9px;
+    transition: 0.4s;
+}
+
+.friends-item:hover {
+    background-color: var(--color-light-xl);
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.friends-item .button-secondary {
+    transition: 0.4s;
+}
+
+.friends-item:hover .button-secondary {
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+}
+
+.friends-photo {
+    border-radius: 9px 9px 0 0;
+    width: 270px;
+    height: 270px;
+}
+
+.friends-name {
+    padding: 27px 0;
+    text-align: center;
+    color: var(--color-dark-l);
+}
+
+.button-secondary {
+    display: block;
+    width: 187px;
+    height: 52px;
+    text-align: center;
+    padding-top: 13px;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    margin: 0 auto;
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-3xl);
+}
+
+.friends-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.btn-round {
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-light-l);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-active {
+    width: 52px;
+    height: 52px;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    cursor: default;
+}
+
+.btn-disabled {
+    width: 52px;
+    height: 52px;
+    color: var(--color-dark-s);
+    background-color: transparent;
+    border: 2px solid var(--color-dark-s);
+    cursor: default;
+    border-radius: 100px;
+}
+
+.btn-round:hover {
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+}
+
 .footer {
     background: url("../../assets/img/noise-transparent.png"), 
                 radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
     background-repeat: repeat, no-repeat;
-    padding-top: 56px;
 }
 
 .footer-container {
@@ -218,14 +326,17 @@ a {
     flex-direction: row;
     column-gap: 160px;
     color: var(--color-light-xl);
+    padding-top: 40px;
 }
 
 .first-col {
     max-width: 280px;
+    padding-top: 17px;
 }
 
 .second-col {
     max-width: 308px;
+    padding-top: 17px;
 }
 
 .header-contacts {
@@ -280,10 +391,6 @@ a {
 }
 
 .header-dog {
-    background-image: url("../../assets/img/footer-puppy.png");
-    align-self: flex-end;
     width: 300px;
     height: 310px;
-    background-repeat: no-repeat;
 }
-
