@@ -245,11 +245,6 @@ a {
 }
 
 .puppy {
-    background-image: url("../../assets/img/start-screen-puppy.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 698px;
-    height: 728px;
     align-self: flex-end;
 }
 
@@ -259,15 +254,18 @@ a {
 
 .section-about {
     color: var(--color-dark-xl);
-    background-image: url("../../assets/img/about-pets.png");
-    background-repeat: no-repeat;
-    background-position: 28.3% 44%;
 }
 
 .about-info {
-    margin-left: 49.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 120px;
+}
+
+.about-text {
     max-width: 430px;
-    padding: 14px 0;
 }
 
 .about-title {
@@ -305,7 +303,7 @@ a {
     padding-bottom: 60px;
 }
 
-.arrow-button {
+.btn-round {
     width: 52px;
     height: 52px;
     border: 2px solid var(--color-primary);
@@ -315,16 +313,15 @@ a {
     transition: 0.3s;
 }
 
-.arrow-button:hover {
+.btn-round:hover {
     background-color: var(--color-primary-light);
-    border: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
 }
 
 .friends-item {
     width: 270px;
     height: 435px;
     background-color: var(--color-light-s);
-    background-repeat: no-repeat;
     cursor: pointer;
     border-radius: 9px;
     transition: 0.4s;
@@ -341,24 +338,21 @@ a {
 
 .friends-item:hover .button-secondary {
     background-color: var(--color-primary-light);
-    border: var(--color-primary-light);
-}
-
-.friends-item:nth-child(2) {
-    background-image: url("../../assets/img/pets-katrine.png");
+    border: 2px solid var(--color-primary-light);
 }
 
 .friends-item:nth-child(3) {
-    background-image: url("../../assets/img/pets-jennifer.png");
-    margin: 0 38px;
+    margin: 0 41px;
 }
 
-.friends-item:nth-child(4) {
-    background-image: url("../../assets/img/pets-woody.png");
+.friends-photo {
+    border-radius: 9px 9px 0 0;
+    width: 270px;
+    height: 270px;
 }
 
 .friends-name {
-    margin-top: 300px;
+    padding: 27px 0;
     text-align: center;
     color: var(--color-dark-l);
 }
@@ -371,7 +365,7 @@ a {
     padding-top: 13px;
     border: 2px solid var(--color-primary);
     border-radius: 100px;
-    margin: 30px 41.5px;
+    margin: 0 auto;
     font-family: "Georgia", serif;
     font-weight: 400;
     font-size: 17px;
@@ -447,15 +441,20 @@ a {
 
 .section-addition {
     background-color: var(--color-light-l);
-    background-image: url("../../assets/img/donation-dog.png");
-    background-repeat: no-repeat;
-    background-position: 30.8% 45%;
     color: var(--color-dark-l);
 }
 
 .addition-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.addition-text {
     max-width: 380px;
-    margin-left: 56.5%;
+
 }
 
 .addition-title {
@@ -475,7 +474,12 @@ a {
     height: 43px;
     padding: 10px 15px 10px 60px;
     margin-bottom: 20px;
-    color: var(--color-dark-l)
+    color: var(--color-dark-l);
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: var(--color-primary-light);
 }
 
 .card::before {
@@ -492,7 +496,6 @@ a {
     background: url("../../assets/img/noise-transparent.png"), 
                 radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
     background-repeat: repeat, no-repeat;
-    padding-top: 56px;
 }
 
 .footer-container {
@@ -500,14 +503,17 @@ a {
     flex-direction: row;
     column-gap: 160px;
     color: var(--color-light-xl);
+    padding-top: 40px;
 }
 
 .first-col {
     max-width: 280px;
+    padding-top: 17px;
 }
 
 .second-col {
     max-width: 308px;
+    padding-top: 17px;
 }
 
 .header-contacts {
@@ -562,10 +568,7 @@ a {
 }
 
 .header-dog {
-    background-image: url("../../assets/img/footer-puppy.png");
-    align-self: flex-end;
     width: 300px;
     height: 310px;
-    background-repeat: no-repeat;
 }
 
