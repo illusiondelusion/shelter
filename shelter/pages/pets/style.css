@@ -213,7 +213,7 @@ a {
     display: block;
 }
 
-.friends-items {
+.pets-items {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -223,7 +223,7 @@ a {
     row-gap: 30px;
 }
 
-.friends-item {
+.pets-item {
     width: 270px;
     height: 435px;
     background-color: var(--color-light-s);
@@ -232,27 +232,27 @@ a {
     transition: 0.4s;
 }
 
-.friends-item:hover {
+.pets-item:hover {
     background-color: var(--color-light-xl);
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
-.friends-item .button-secondary {
+.pets-item .button-secondary {
     transition: 0.4s;
 }
 
-.friends-item:hover .button-secondary {
+.pets-item:hover .button-secondary {
     background-color: var(--color-primary-light);
     border: 2px solid var(--color-primary-light);
 }
 
-.friends-photo {
+.pet-photo {
     border-radius: 9px 9px 0 0;
     width: 270px;
     height: 270px;
 }
 
-.friends-name {
+.pet-name {
     padding: 27px 0;
     text-align: center;
     color: var(--color-dark-l);
@@ -397,3 +397,46 @@ a {
     height: 310px;
 }
 
+
+@media (max-width: 800px) {
+    
+    .header {
+        padding-top: 30px;
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .section {
+        padding: 80px 0 76px 0;
+    }
+
+    .friends-title {
+        padding-bottom: 30px;
+    }
+    
+    .pets-items {
+        padding: 0;
+        justify-content: center;
+        column-gap: 40px;
+        margin: 0 auto 40px auto;
+    }
+
+    .pets-item:nth-child(n+7) {
+        display: none;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 60px;
+        row-gap: 65px;
+        padding-top: 30px;
+    }
+
+    .first-col,
+    .second-col {
+        padding-top: 0;
+    }
+}
