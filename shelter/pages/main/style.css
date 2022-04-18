@@ -148,6 +148,10 @@ a {
     text-align: center;
 }
 
+.hamburger {
+    display: none;
+}
+
 .nav-list {
     margin-left: auto;
     display: flex;
@@ -404,6 +408,7 @@ a {
     background-position: center top;
     background-repeat: no-repeat;
     padding-top: 90px;
+    color: var(--color-dark-l);
 }
 
 .help-item:nth-child(1) {
@@ -571,7 +576,7 @@ a {
     background-image: url("../../assets/svg/icon-marker.svg");
 }
 
-.header-dog {
+.footer-dog {
     width: 300px;
     height: 310px;
 }
@@ -654,5 +659,213 @@ a {
     .first-col,
     .second-col {
         padding-top: 0;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .h2, 
+    .h3 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 2px;
+        background-color: var(--color-primary);
+        display: block;
+        margin: 8px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .hamburger :hover {
+        cursor: pointer;
+    }
+
+    .hero-info {
+        text-align: center;
+        padding-bottom: 105px;
+    }
+
+    .puppy {
+        width: 260px; 
+        height: 270px;
+    }
+
+    .section {
+        padding: 42px 0;
+    }
+
+    .about-info {
+        row-gap: 42px;
+    }
+
+    .about-title {
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: justify;
+        padding: 0 15px;
+    }
+
+    .about-description {
+        padding-bottom: 22px;
+    }
+
+    .about-info .flex-img {
+        width: 260px;
+        height: 353px;
+    }
+
+    .friends-title {
+        padding-bottom: 42px;
+    }
+
+    .pets-slider {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 80px;
+        row-gap: 20px;
+        padding-bottom: 42px;
+    }
+
+    .pets-items {
+        order: 0;
+    }
+
+    .pets-item:nth-child(n+2) {
+        display: none;
+    }
+
+    .btn-round {
+        order: 1;
+    }
+
+    .help-title {
+        padding-bottom: 42px;
+    }
+
+    .help-items {
+        column-gap: 30px;
+        row-gap: 30px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px 5px;
+    }
+
+    .help-item {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        background-size: 50px 50px;
+        padding-top: 70px;
+        width: 130px;
+    }
+    
+    .help-item:nth-child(3) {
+        width: 130px;
+    }
+
+    .addition-info {
+        row-gap: 42px;
+    }
+
+    .addition-title {
+        text-align: center;
+        padding-bottom: 23px;
+    }
+
+    .addition-text {
+        padding: 0 10px;
+    }
+    
+    .bank-info {
+        letter-spacing: 0;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .card {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        padding: 13px 10px 13px 60px;
+    }
+
+    .addition-text .paragraph-s {
+        text-align: justify;
+    }
+
+    .addition-info .flex-img {
+        width: 260px;
+        height: 135px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-container {
+        row-gap: 45px;
+    }
+
+    .second-col .h3 {
+        max-width: 294px;
+    }
+
+    .list-item-contact {
+        padding: 45px 0 0 60px;
+    }
+
+    .list-item-contact:nth-child(n)::before {
+        left: 14px;
+        top: 39px;
+    }
+
+    .list-item-contact:nth-child(2)::before {
+        left: 19px;
+        top: 42px;
+    }
+
+    .list-item-geo {
+        padding: 42px 0 0 22px;
+    }
+
+    .list-item-geo::before {
+        left: 0px;
+        top: 46px;
+    }
+
+    .list-item-geo:nth-child(2)::before {
+        top: 39px;
+    }
+
+    .footer-dog {
+        width: 260px;
+        height: 269px;
     }
 }
