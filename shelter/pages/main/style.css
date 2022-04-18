@@ -581,7 +581,8 @@ a {
     height: 310px;
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 1279px){
     
     .header {
         padding-top: 30px;
@@ -621,9 +622,14 @@ a {
     .flex-img {
         order: 1;
     }
+
+    .pets-slider {
+        justify-content: space-evenly;
+    }
     
     .pets-items {
         column-gap: 40px;
+        padding: 0 10px;
     }
 
     .pets-item:nth-child(3) {
@@ -662,7 +668,7 @@ a {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
 
     .h2, 
     .h3 {
@@ -678,6 +684,11 @@ a {
         padding: 0 10px;
     }
 
+    .header-container {
+        justify-content: flex-end;
+        column-gap: 42px;
+    }
+
     .nav-list {
         display: none;
     }
@@ -691,7 +702,7 @@ a {
         height: 2px;
         background-color: var(--color-primary);
         display: block;
-        margin: 8px auto;
+        margin: 8px 0;
         -webkit-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
@@ -706,6 +717,10 @@ a {
         padding-bottom: 105px;
     }
 
+    .hero-title {
+        margin: 0 auto;
+    }
+
     .puppy {
         width: 260px; 
         height: 270px;
@@ -717,10 +732,12 @@ a {
 
     .about-info {
         row-gap: 42px;
+        align-items: center;
     }
 
     .about-title {
         text-align: center;
+        margin: 0 auto;
     }
 
     .about-text {
@@ -744,6 +761,7 @@ a {
     .pets-slider {
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         column-gap: 80px;
         row-gap: 20px;
         padding-bottom: 42px;
@@ -751,6 +769,8 @@ a {
 
     .pets-items {
         order: 0;
+        width: 100%;
+        justify-content: center;
     }
 
     .pets-item:nth-child(n+2) {
@@ -766,10 +786,11 @@ a {
     }
 
     .help-items {
+        max-width: 300px;
+        margin: 0 auto;
         column-gap: 30px;
         row-gap: 30px;
         justify-content: flex-start;
-        align-items: flex-start;
         padding: 0px 5px;
     }
 
@@ -830,6 +851,8 @@ a {
     }
 
     .footer-container {
+        flex-direction: column;
+        align-items: center;
         row-gap: 45px;
     }
 
