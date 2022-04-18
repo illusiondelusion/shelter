@@ -685,11 +685,12 @@ a {
     }
 
     .header-container {
-        justify-content: flex-end;
+        justify-content: space-between;
         column-gap: 42px;
+        padding-right: 52px;
     }
 
-    .nav-list {
+    .nav {
         display: none;
     }
 
@@ -708,10 +709,14 @@ a {
         transition: all 0.3s ease-in-out;
     }
     
-    .hamburger :hover {
+    .hamburger, .line:hover {
         cursor: pointer;
-        color: var(--color-primary-light);
     }
+
+    .hamburger:hover .line {
+        background-color: var(--color-primary-light);
+    }
+
 
     .hero-info {
         text-align: center;
