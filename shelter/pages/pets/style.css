@@ -341,7 +341,7 @@ a {
     padding-top: 17px;
 }
 
-.header-contacts {
+.footer-contacts {
     list-style: none;
 }
 
@@ -392,7 +392,7 @@ a {
     background-image: url("../../assets/svg/icon-marker.svg");
 }
 
-.header-dog {
+.footer-dog {
     width: 300px;
     height: 310px;
 }
@@ -438,5 +438,105 @@ a {
     .first-col,
     .second-col {
         padding-top: 0;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .h2, 
+    .h3 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 2px;
+        background-color: var(--color-dark-3xl);
+        display: block;
+        margin: 8px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .hamburger :hover {
+        cursor: pointer;
+    }
+
+    .section {
+        padding: 42px 0;
+    }
+
+    .friends-title {
+        padding-bottom: 42px;
+    }
+
+    .pets-item:nth-child(n+4) {
+        display: none;
+    }
+
+    .friends-nav {
+        column-gap: 10px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-container {
+        row-gap: 45px;
+    }
+
+    .second-col .h3 {
+        max-width: 294px;
+    }
+
+    .list-item-contact {
+        padding: 45px 0 0 60px;
+    }
+
+    .list-item-contact:nth-child(n)::before {
+        left: 14px;
+        top: 39px;
+    }
+
+    .list-item-contact:nth-child(2)::before {
+        left: 19px;
+        top: 42px;
+    }
+
+    .list-item-geo {
+        padding: 42px 0 0 22px;
+    }
+
+    .list-item-geo::before {
+        left: 0px;
+        top: 46px;
+    }
+
+    .list-item-geo:nth-child(2)::before {
+        top: 39px;
+    }
+
+    .footer-dog {
+        width: 260px;
+        height: 269px;
     }
 }
